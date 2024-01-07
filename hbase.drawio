@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-07T07:14:10.334Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="rZmcdy6iuXoU58bQiBRc" version="22.1.17" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-01-07T08:30:28.579Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="lt-4rXGGBqNu5d1G5flh" version="22.1.17" type="github" pages="6">
   <diagram name="hbase数据模型" id="8cgrmLcbq0KiKvhiipVd">
     <mxGraphModel dx="2572" dy="1115" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -357,10 +357,77 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pyfRqNAvI0Y3obshXRys" name="读数据流程">
-    <mxGraphModel dx="960" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1280" dy="817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6by1vbh_HFCaOZ1Mr5K5-1" target="6by1vbh_HFCaOZ1Mr5K5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6by1vbh_HFCaOZ1Mr5K5-1" target="6by1vbh_HFCaOZ1Mr5K5-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6by1vbh_HFCaOZ1Mr5K5-1" target="6by1vbh_HFCaOZ1Mr5K5-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="190" />
+              <mxPoint x="660" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;HBase 客户端&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Zookeeper集群&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="360" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Region Server1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="280" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;MemStore&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="75" y="320" width="165" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Block Cache&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="260" y="320" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="560" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Region Server2&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="280" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;MemStore&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="515" y="400" width="285" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Block Cache&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="830" y="400" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;1、访问zk，获得hbase:meta表所在的region server&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="80" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="6by1vbh_HFCaOZ1Mr5K5-17" target="6by1vbh_HFCaOZ1Mr5K5-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="500" />
+              <mxPoint x="925" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-17" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;HDFS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520" width="1000" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-19" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;2、访问region server获取元数据并找到&lt;br&gt;目标rowKey所在的region以及regionServer&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;3、访问rowkey对应region所在的&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;regionserver,发起读数据请求&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="525" y="215" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6by1vbh_HFCaOZ1Mr5K5-22" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;4、首先读取MemStore，如果数据存在，则直接返回；如果不存在则读取磁盘文件（读取的时候会判断数据所在的块是否在缓存，如果在缓存中则读取缓存返回，如果不存在则去HDFS读取然后把该块缓存）&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="310" width="500" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
