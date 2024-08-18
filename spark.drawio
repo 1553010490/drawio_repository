@@ -168,6 +168,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="sWzHTqXqPz0AIIBAlHrU-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;spark on yarn的本质&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Master角色由YARN的ResourceManager担任，&lt;/li&gt;&lt;li&gt;Worker角色由YARN的NodeManager担任，&lt;/li&gt;&lt;li&gt;Driver角色运行在YARN容器内或提交任务的客户端进程中&lt;/li&gt;&lt;li&gt;真正干活的Executor运行在YARN提供的容器内&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="25" width="470" height="140" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
